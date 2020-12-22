@@ -7,76 +7,72 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
-<ScrollPane vbarPolicy="ALWAYS" hbarPolicy="NEVER"
-            prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: white;"
-            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
-   <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-               prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: white;">
-      <VBox alignment="CENTER">
-         <VBox prefWidth="500" prefHeight="100" alignment="CENTER">
-            <Text layoutX="248.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEN LILLE">
-               <font>
-                  <Font name="Palatino" size="20.0"/>
-               </font>
-            </Text>
-            <Text layoutX="224.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KOGEBOG">
-               <font>
-                  <Font name="Palatino" size="30.0"/>
-               </font>
-            </Text>
-         </VBox>
-         <HBox prefWidth="500" prefHeight="155" alignment="CENTER">
-            <Button contentDisplay="CENTER" layoutX="66.0" layoutY="101.0" mnemonicParsing="false"
-                    style="-fx-background-color: white;" text="Pandekager" >
-               <graphic>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
-                     <Image url="Fotos/pandekager.jpg"/>
-                  </ImageView>
-               </graphic>
-               <font>
-                  <Font name="Palatino" size="25.0"/>
-               </font>
-            </Button>
-            <Button contentDisplay="CENTER" layoutX="300.0" layoutY="254.0" mnemonicParsing="false"
-                    style="-fx-background-color: white;" text="Pølsehorn">
-               <graphic>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
-                     <Image url="Fotos/pølsehorn.jpg"/>
-                  </ImageView>
-               </graphic>
-               <font>
-                  <Font name="Palatino" size="25.0"/>
-               </font>
-            </Button>
-         </HBox>
-         <HBox prefWidth="500" prefHeight="155" alignment="CENTER">
-            <Button contentDisplay="CENTER" layoutX="66.0" layoutY="254.0" mnemonicParsing="false"
-                    style="-fx-background-color: white;" text="Pasta med Kødsauce">
-               <graphic>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
-                     <Image url="Fotos/pasta-med-kødsauce.jpg"/>
-                  </ImageView>
-               </graphic>
-               <font>
-                  <Font name="Palatino" size="20.0"/>
-               </font>
-            </Button>
-            <Button contentDisplay="CENTER" layoutX="300.0" layoutY="254.0" mnemonicParsing="false"
-                    style="-fx-background-color: white;" text="Lasagne">
-               <graphic>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
-                     <Image url="Fotos/lasagne.jpg"/>
-                  </ImageView>
-               </graphic>
-               <font>
-                  <Font name="Palatino" size="25.0"/>
-               </font>
-            </Button>
-         </HBox>
-      </VBox>
-   </AnchorPane>
-</ScrollPane>
 
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: white;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <VBox alignment="CENTER">
+      <VBox prefWidth="600" prefHeight="100" alignment="CENTER">
+         <Text layoutX="248.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEN LILLE">
+            <font>
+               <Font name="Palatino" size="20.0"/>
+            </font>
+         </Text>
+         <Text layoutX="224.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KOGEBOG">
+            <font>
+               <Font name="Palatino" size="30.0"/>
+            </font>
+         </Text>
+      </VBox>
+      <HBox prefWidth="600" prefHeight="155" alignment="CENTER">
+         <Button contentDisplay="CENTER" layoutX="66.0" layoutY="101.0" mnemonicParsing="false"
+                 style="-fx-background-color: white;" text="Pandekager" fx:id="pandekager" onAction="#openPandekager">
+            <graphic>
+               <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                  <Image url="Fotos/pandekager.jpg"/>
+               </ImageView>
+            </graphic>
+            <font>
+               <Font name="Palatino" size="25.0"/>
+            </font>
+         </Button>
+         <Button contentDisplay="CENTER" layoutX="300.0" layoutY="254.0" mnemonicParsing="false"
+                 style="-fx-background-color: white;" text="Pølsehorn">
+            <graphic>
+               <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                  <Image url="Fotos/pølsehorn.jpg"/>
+               </ImageView>
+            </graphic>
+            <font>
+               <Font name="Palatino" size="25.0"/>
+            </font>
+         </Button>
+      </HBox>
+      <HBox prefWidth="600" prefHeight="155" alignment="CENTER">
+         <Button contentDisplay="CENTER" layoutX="66.0" layoutY="254.0" mnemonicParsing="false"
+                 style="-fx-background-color: white;" text="Pasta med Kødsauce">
+            <graphic>
+               <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                  <Image url="Fotos/pasta-med-kødsauce.jpg"/>
+               </ImageView>
+            </graphic>
+            <font>
+               <Font name="Palatino" size="20.0"/>
+            </font>
+         </Button>
+         <Button contentDisplay="CENTER" layoutX="300.0" layoutY="254.0" mnemonicParsing="false"
+                 style="-fx-background-color: white;" text="Lasagne">
+            <graphic>
+               <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                  <Image url="Fotos/lasagne.jpg"/>
+               </ImageView>
+            </graphic>
+            <font>
+               <Font name="Palatino" size="25.0"/>
+            </font>
+         </Button>
+      </HBox>
+   </VBox>
+</AnchorPane>
