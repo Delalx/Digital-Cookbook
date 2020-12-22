@@ -84,4 +84,29 @@ public class Controller {
         addFremgangsmaade(file2);
     }
 
+    /* Pølsehorn */
+    @FXML
+    Button polsehorn = new Button();
+
+    @FXML
+    void openPolsehorn() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("pølsehorn.fxml"));
+        Stage stage = (Stage) polsehorn.getScene().getWindow();
+        stage.setScene(new Scene(root));
+
+        try {
+            stage.show();
+        } catch (Exception e) {
+            stage.close();
+        }
+    }
+
+    @FXML
+    void Polsehorn() {
+        File file = new File("Pølsehorn_ingredients");
+        addIngredienser(file);
+
+        File file2 = new File("Pølsehorn_guide");
+        addFremgangsmaade(file2);
+    }
 }
