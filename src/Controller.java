@@ -135,4 +135,30 @@ public class Controller {
         File file2 = new File("Pasta_guide");
         addFremgangsmaade(file2);
     }
+
+    /* Lasagne */
+    @FXML
+    Button lasagne = new Button();
+
+    @FXML
+    void openLasagne() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("lasagne.fxml"));
+        Stage stage = (Stage) polsehorn.getScene().getWindow();
+        stage.setScene(new Scene(root));
+
+        try {
+            stage.show();
+        } catch (Exception e) {
+            stage.close();
+        }
+    }
+
+    @FXML
+    void Lasagne() {
+        File file = new File("Lasagne_ingredients");
+        addIngredienser(file);
+
+        File file2 = new File("Lasagne_guide");
+        addFremgangsmaade(file2);
+    }
 }
