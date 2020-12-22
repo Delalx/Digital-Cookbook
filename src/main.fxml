@@ -52,7 +52,7 @@
       </HBox>
       <HBox prefWidth="600" prefHeight="155" alignment="CENTER">
          <Button contentDisplay="CENTER" layoutX="66.0" layoutY="254.0" mnemonicParsing="false"
-                 style="-fx-background-color: white;" text="Pasta med Kødsauce">
+                 style="-fx-background-color: white;" text="Pasta med Kødsauce" fx:id="pasta" onAction="#openPasta">
             <graphic>
                <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
                   <Image url="Fotos/pasta-med-kødsauce.jpg"/>

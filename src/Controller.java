@@ -109,4 +109,30 @@ public class Controller {
         File file2 = new File("Pølsehorn_guide");
         addFremgangsmaade(file2);
     }
+
+    /* Pasta med kødsauce */
+    @FXML
+    Button pasta = new Button();
+
+    @FXML
+    void openPasta() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("pasta.fxml"));
+        Stage stage = (Stage) polsehorn.getScene().getWindow();
+        stage.setScene(new Scene(root));
+
+        try {
+            stage.show();
+        } catch (Exception e) {
+            stage.close();
+        }
+    }
+
+    @FXML
+    void Pasta() {
+        File file = new File("Pasta_ingredients");
+        addIngredienser(file);
+
+        File file2 = new File("Pasta_guide");
+        addFremgangsmaade(file2);
+    }
 }
